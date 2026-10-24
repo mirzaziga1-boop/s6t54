@@ -1,0 +1,1 @@
+<?php get_header(); ?><div class="shams-container shams-center-pad"><h1 class="shams-sec-title">404</h1><p data-i18n="err_404">Page not found.</p><a class="shams-btn shams-btn-gold" href="<?php echo esc_url(home_url('/')); ?>"><span data-i18n="back_home">Back to home</span></a></div><?php get_footer(); ?>
