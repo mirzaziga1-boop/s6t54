@@ -1,0 +1,16 @@
+/*
+Theme Name: Shams Al Bosnia
+Theme URI: https://shamsalbosnia.com
+Author: Shams Al Bosnia
+Author URI: https://shamsalbosnia.com
+Description: Standalone luxury rent-a-car & tourism WordPress theme. Dark + gold branding, Playfair/Inter typography, built-in Vehicle CPT with live fleet filter & search, native 3-language real-time switcher (BS/EN/AR + RTL, no plugin), Elementor section widgets, and a Customizer-driven header/footer. Ready for one-click zip install.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.8
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: shams-albosnia
+Tags: one-column, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, wide-blocks, elementor
+*/
+/* All presentation lives in assets/css/theme.css (enqueued). This file only carries the theme header. */
