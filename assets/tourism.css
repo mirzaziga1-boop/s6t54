@@ -1,0 +1,37 @@
+.sa-dgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;max-width:1240px;margin:0 auto}
+.sa-dcard{background:var(--sa-card);border:1px solid var(--sa-border);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:.25s}
+.sa-dcard:hover{border-color:#4a3b1c;transform:translateY(-3px)}
+.sa-dimg{position:relative;display:block;aspect-ratio:606/256;background:#120f0d;overflow:hidden}
+.sa-dimg img{width:100%;height:100%;object-fit:cover;transition:.5s}.sa-dcard:hover .sa-dimg img{transform:scale(1.04)}
+.sa-dbadge{position:absolute;top:16px;inset-inline-start:16px;z-index:2;background:var(--sa-gold);color:#1a1307;border-radius:6px;padding:6px 12px;font-size:11px;font-weight:800}
+.sa-dbadge-static{position:static;display:inline-block;margin-bottom:16px}
+.sa-dbody{padding:28px 24px 24px;display:flex;flex-direction:column;flex:1;gap:14px}
+.sa-dbody h3{font-size:24px;font-weight:700}.sa-dbody h3 a:hover{color:var(--sa-gold)}
+.sa-dex{color:var(--sa-muted);font-size:13px;line-height:1.85;margin:0 0 10px}
+.sa-dinfo{margin-top:auto;background:#120f0d;border:1px solid var(--sa-border);border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:9px}
+.sa-drow{display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:11.5px}
+.sa-dl{display:inline-flex;align-items:center;gap:9px;color:var(--sa-muted);white-space:nowrap}.sa-dl .sa-i{color:var(--sa-gold);font-size:14px}
+.sa-drow b{text-align:end;font-weight:800}.sa-drow b.sa-gold{color:var(--sa-gold)}
+.sa-dmore{display:flex;justify-content:space-between;align-items:center;color:var(--sa-gold);font-size:12px;font-weight:800;margin-top:6px}
+.sa-dmore:hover{color:var(--sa-gold2)}[dir=rtl] .sa-dmore .sa-i{transform:scaleX(-1)}
+.sa-dpag{margin-top:36px;text-align:center}.sa-dpag .page-numbers{display:inline-flex;min-width:38px;height:38px;align-items:center;justify-content:center;border:1px solid var(--sa-border);border-radius:8px;margin:0 3px;font-weight:700;font-size:13px}
+.sa-dpag .current,.sa-dpag a:hover{background:var(--sa-gold);color:#1a1307;border-color:var(--sa-gold)}
+/* Tips */
+.sa-tips{max-width:1240px;margin:0 auto;background:var(--sa-card);border:1px solid var(--sa-border);border-radius:20px;padding:32px}
+.sa-tips-h{display:flex;align-items:center;gap:14px;margin-bottom:24px}
+.sa-tips-ico{width:40px;height:40px;border-radius:10px;background:#2c2416;border:1px solid #4a3b1c;color:var(--sa-gold);display:flex;align-items:center;justify-content:center;flex:none}
+.sa-tips-h h2{font-size:22px}.sa-tips-h small{display:block;color:var(--sa-muted);font-size:11.5px;margin-top:4px}
+.sa-tipgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.sa-tip{background:#120f0d;border:1px solid var(--sa-border);border-radius:14px;padding:20px 20px 22px}
+.sa-tip h4{font-family:var(--sa-body);font-size:13.5px;font-weight:800;color:var(--sa-gold);margin-bottom:12px}
+.sa-tip p{color:var(--sa-muted);font-size:11.5px;line-height:1.9;margin:0}
+/* Single guide */
+.sa-dhero{text-align:center;padding-bottom:10px}.sa-dback{display:inline-block;color:var(--sa-gold);font-size:12px;font-weight:800;margin-bottom:20px}
+.sa-dsingle{padding-top:20px;padding-bottom:50px}
+.sa-dhero-img{border-radius:18px;overflow:hidden;border:1px solid var(--sa-border);margin-bottom:36px;max-height:520px}.sa-dhero-img img{width:100%;height:100%;max-height:520px;object-fit:cover}
+.sa-dlayout{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:44px;align-items:start}
+.sa-dcontent{font-size:16px}.sa-dcontent p{margin:0 0 1.2em;color:#e6dfd3}
+.sa-dside{position:sticky;top:110px;display:flex;flex-direction:column;gap:18px}.sa-dside .sa-dinfo{margin:0;flex-direction:column;padding:18px}
+.sa-dside .sa-drow{flex-direction:column;align-items:flex-start;gap:4px;padding-bottom:10px;border-bottom:1px solid var(--sa-border)}.sa-dside .sa-drow:last-child{border:0;padding:0}.sa-dside .sa-drow b{text-align:start;font-size:13px}
+@media(max-width:900px){.sa-dlayout{grid-template-columns:1fr}.sa-dside{position:static}}
+@media(max-width:720px){.sa-dgrid,.sa-tipgrid{grid-template-columns:1fr}.sa-dbody h3{font-size:21px}.sa-drow{flex-direction:column;align-items:flex-start;gap:3px}.sa-drow b{text-align:start}.sa-tips{padding:20px}}
